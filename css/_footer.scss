@@ -1,0 +1,9 @@
+@use 'assets/colors' as *;
+@use 'assets/mixins';
+
+footer {
+    @include mixins.flex-center;
+    background: $light-navy;
+    margin-top: 6rem;
+    height: 12rem;
+}

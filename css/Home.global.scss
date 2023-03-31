@@ -1,0 +1,275 @@
+@use 'assets/base';
+@use 'assets/colors' as *;
+@use 'assets/forms';
+@use 'assets/backgrounds';
+@use 'assets/typography';
+@use 'header';
+@use 'footer';
+@use 'assets/mixins';
+@use 'assets/reset';
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+    - Elements
+    - Pages
+        - Home Page
+    - Components
+    - Navigation
+    - Posts and pages
+    - Media
+    - Captions
+    - Galleries
+    - Utilities
+    - Accessibility
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+span{
+    color: $green;
+}
+/*--------------------------------------------------------------
+# PAGES
+--------------------------------------------------------------*/
+.intro-paragraph{
+    @include mixins.max-width-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.about-me-paragraph{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clint-image {
+    @include mixins.box-shadow-border;
+}
+
+.flex-container{
+    @include mixins.max-width-center;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.flex-container > div{
+    width: 49%;
+}
+
+.skills-container{
+    margin: 6rem 0rem;
+    background: $dark-red;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+    box-shadow: 0 5px 15px -10px $green;
+}
+
+.skills{
+    @include mixins.max-width-center;
+    @include mixins.flex-center;
+    border-radius: 10px;
+    text-align: center;
+    height: 20rem;
+
+    ul {
+        @include mixins.basic-flex;
+        width: 100%;
+    }
+
+}
+
+.skills > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.work-history, .projects{
+    @include mixins.max-width-center;
+}
+
+.work-history{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    p{
+        width: 55ch;
+    }
+}
+
+.academic{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.flexcim-content{
+    background: $dark-red;
+    padding: 3rem;
+    @include mixins.box-shadow-border;
+}
+
+.education-content, .volunteering-content{
+    background: $dark-red;
+    padding: 3rem;
+    @include mixins.box-shadow-border;
+}
+
+.work-history span{
+    font-weight: 700;
+    color: $green;
+}
+
+.what-do-container{
+    max-width: 1500px;
+    margin: 6rem auto;
+
+}
+
+.what-do-flex-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+        div{
+            background-color: $dark-red;
+            padding: 3rem;
+            margin: 0 auto;
+            @include mixins.box-shadow-border;
+        }
+        p {
+            margin-top: 2rem;
+        }
+}
+
+.js-meme-image{
+    width: 750px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.meme, .flix{
+    @include mixins.max-width-center;
+    position: relative;
+}
+
+.project-text{
+    @include mixins.box-shadow-border;
+    opacity: 0;
+    padding: 2rem;
+    height: 400px;
+    background-color: $dark-red;
+    position: absolute;
+        h3{
+            text-align: center;
+            font-weight: 700;
+        }
+}
+
+.project-text:hover{
+    opacity: 100%;
+    transition: opacity .45s ease-out;
+}
+
+.projects-container {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    p{
+        color: $lt-green;
+    }
+}
+
+.tools-used {
+    gap: 5rem;
+    @include mixins.basic-flex;
+    p{
+        margin-top: 1rem;
+        color: $green;
+    }
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-flex-container{
+    display: flex;
+    @include mixins.max-width-center;
+    h3{
+        font-weight: 300;
+        font-size: 3rem;
+    }
+}
+
+.contact-background{
+    background-color: $light-navy;
+    padding: 6rem;
+}
+
+.phone, .email, .location, .website{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+        p{
+            font-size: 2rem;
+        }
+}
+
+.phone {
+    margin-top: 5rem;
+}
+
+.section-heading{
+    @include mixins.max-width-center;
+    text-align: left;
+}
+
+/*--------------------------------------------------------------
+# END OF PAGES
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Captions
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+

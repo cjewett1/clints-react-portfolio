@@ -1,0 +1,29 @@
+@use 'assets/colors' as *;
+@use 'assets/mixins';
+
+//Logo height
+svg {
+    height: 7rem;
+    margin: 1rem 0rem;
+    padding-right: 1rem;
+}
+
+//Social links height
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    font-size: 4.5rem;
+}
+
+.header {
+    background-color: $dark-red;
+    color: $lt-grey;
+    box-shadow: 0 5px 15px -10px $green;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-flex{
+    @include mixins.basic-flex;
+}
